@@ -38,7 +38,7 @@ if menu == 'Laboratorio Virtual':
         'nav-link-selected': {'background-color': '#03617E'}})
 
     if menu_herramientas == 'Entorno 360':
-        imagen_360()
+        st.components.v1.iframe("https://juancarlosperezdelgado.github.io/Imagenes_heliopolis/index.html", width=2000, height=1000)
 
     elif menu_herramientas == 'Información':
         pass
