@@ -40,7 +40,7 @@ if menu == 'Laboratorio Virtual':
     if menu_herramientas == 'Entorno 360':
         st.components.v1.iframe("https://juancarlosperezdelgado.github.io/Imagenes_heliopolis/index.html", width=2000, height=1000)
 
-    elif menu_herramientas == 'Realidad Virtual':
+    if menu_herramientas == 'Realidad Virtual':
         
         st.markdown("<br>", unsafe_allow_html=True)
         col1, col2,col3 = st.columns(3)
