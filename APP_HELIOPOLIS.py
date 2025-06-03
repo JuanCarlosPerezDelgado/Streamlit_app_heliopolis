@@ -9,7 +9,7 @@ from streamlit_option_menu import option_menu
 import plotly.express as px
 import webbrowser
 
-from laboratorio_virtual_heliopolis import imagen_360
+
 from simulador import simulador_grafico
 
 st.set_page_config(layout="wide")
