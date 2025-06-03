@@ -29,7 +29,7 @@ if menu == 'Laboratorio Virtual':
 
     menu_herramientas = option_menu(
         menu_title=None,  
-        options=['Entorno 360','Información'],
+        options=['Entorno 360','Realidad Virtual','Información'],
         default_index=0,
         orientation='horizontal',
         styles={'container': {'padding': '5px', 'background-color': '#ffffff'},
@@ -40,6 +40,40 @@ if menu == 'Laboratorio Virtual':
     if menu_herramientas == 'Entorno 360':
         st.components.v1.iframe("https://juancarlosperezdelgado.github.io/Imagenes_heliopolis/index.html", width=2000, height=1000)
 
+    elif menu_herramientas == 'Realidad Virtual':
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+        col1, col2,col3 = st.columns(3)
+        with col1:
+            pass
+        with col2:
+            st.image("visionqr.png", width=390)
+        with col3:
+            pass
+        col1, col2,col3,col4,col5 = st.columns(5)
+        with col1:
+            pass
+        with col2:
+            pass
+        with col3:
+            st.markdown("""
+            <a href="https://drive.google.com/file/d/12fkcycl8dFucg56aM2eVkWmaMkI_Nzfx/view?usp=drive_link" target="_blank">
+            <button style='padding: 0.6em 1.5em;
+                   background-color: #03617E;
+                   color: white;
+                   border: none;
+                   border-radius: 5px;
+                   font-size: 17px;
+                   font-weight: bold;
+                   cursor: pointer;'>
+                Descargar Archivo VR
+            </button>
+            </a>
+            """, unsafe_allow_html=True)
+        with col4:
+            pass
+        with col5:
+            pass
     elif menu_herramientas == 'Información':
         pass
 
