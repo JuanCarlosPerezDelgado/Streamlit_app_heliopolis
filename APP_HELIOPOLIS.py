@@ -75,7 +75,34 @@ if menu == 'Laboratorio Virtual':
         with col5:
             pass
     elif menu_herramientas == 'Información':
-        pass
+        tab1, tab2, tab3, tab4 = st.tabs(["Descripción", "Características","Esquema de la instalación","Descripción del Sistema"])
+        with tab1:
+            st.write('Equipo compacto monoblock de propano (R-290) para minicámaras frigoríficas de refrigeración y congelación, para montaje sobre el panel de (pared o) puerta de la cámara. El equipo está instalado en una de las cámaras frigoríficas del centro de formación I.E.S. Heliópolis de Sevilla.')
+
+        with tab2:
+            st.write('- Serie: Intarblock ')
+            st.write('-	Refrigerante: R290')
+            st.write('-	Potencia frigorífica* (W): 1070')
+            st.write('-	Potencia absorbida* (W): 640')
+            st.write('-	Coeficiente de rendimiento: 1.67')
+            st.write('-	Caudal de aire condensador (m3/h): 500')
+            st.write('-	Caudal de aire evaporador (m3/h): 550')
+            st.write('-	Tipo de compresor: Hermético alternativo')
+            st.write('-	Desplazamiento compresor (m3/h): 4.83')
+            st.write('-	Carga de refrigerante (g): 130')
+            st.write('*35 ºC temperatura exterior y cámara -15 ºC.')
+
+        with tab3:
+            col1, col2, col3 = st.columns([1, 5, 1])
+            with col2:
+                st.image("ESQUEMA1.jpg", width=700)
+
+        with tab4:
+            st.write('El esquema frigorífico del sistema consiste en un ciclo de compresión simple y subcrítico con propano, preparado para operar con altos ratios de compresión y temperaturas de cámara de hasta -25ºC. Es un sistema compacto integrable en la pared de la mini cámara frigorífica (<15 m3) donde el evaporador queda en el interior, y el resto de componentes se ubican en el exterior. El desescarche del evaporador se realiza mediante un ciclo de gas caliente (o gas mareado), donde una válvula solenoide se energiza cuando se desea realizar el ciclo de desescarche y bypasea la descarga del compresor con la entrada al evaporador. Al calentar la batería el hielo formado se funde y circula como agua líquida al exterior de la cámara. En este caso, el agua se almacena en un depósito que sirve como desrecalentador de la descarga del compresor, mejorando la eficiencia del proceso.')
+            col1, col2, col3 = st.columns([1, 5, 1])
+            with col2:
+                st.image("ESQUEMA2.jpg", width=700)
+
 
 elif menu == 'Datos en Histórico':
     df_ensayo_0=pd.read_excel('Ensayo0C.xlsx',index_col=0,parse_dates=True)
