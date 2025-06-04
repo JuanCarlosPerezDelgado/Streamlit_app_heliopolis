@@ -308,7 +308,7 @@ def simulador_grafico(ensayo_seleccionado,tipo_grafico_diferido,velocidad_reprod
                 height=500,
                 legend=dict(orientation='h', yanchor='bottom', y=-0.4,title_font_color='black'),
                 xaxis=dict(showgrid=True, gridcolor='lightgray',range=[0,df_ensayo['Tiempo'].max()],mirror=False,linecolor='black',tickfont=dict(color='black'),title=dict(text='Tiempo (minutos)', font=dict(color='black'))),
-                yaxis=dict(showgrid=True,gridcolor='lightgray',range=[0,3],mirror=False,linecolor='black',tickfont=dict(color='black'),title=dict(text='Valor', font=dict(color='black'))))
+                yaxis=dict(showgrid=True,gridcolor='lightgray',range=[0,4],mirror=False,linecolor='black',tickfont=dict(color='black'),title=dict(text='Valor', font=dict(color='black'))))
             chart_cop.plotly_chart(fig_cop)
 
         if 'Scada' in tipo_grafico_diferido:
