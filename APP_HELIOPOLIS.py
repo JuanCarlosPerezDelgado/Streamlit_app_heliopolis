@@ -38,7 +38,7 @@ if menu == 'Laboratorio Virtual':
         'nav-link-selected': {'background-color': '#03617E'}})
 
     if menu_herramientas == 'Entorno 360':
-        st.components.v1.iframe("vision.kiconex.com", width=2000, height=1000)
+        st.components.v1.iframe("https://juancarlosperezdelgado.github.io/Imagenes_heliopolis/", width=2000, height=1000)
 
     if menu_herramientas == 'Realidad Virtual':
         
